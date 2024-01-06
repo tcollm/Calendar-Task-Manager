@@ -1,0 +1,34 @@
+Project Paper 
+
+TITLE: 
+Task Calendar Project 
+Tyler Collingridge 
+Section A 
+
+PROBLEM DESCRIPTION:
+I created a program that generates a weekly calendar which users are able to append events to. 
+I created a day class, and each day has a vector of daily events. Everything is displayed in SFML 
+and the user is able to click on each day and then create an event by typing its details within the 
+terminal. Users are able to change the event’s name, start time, and the event’s 
+color. After the user inputs all of the details about the event, the event is displayed in the SFML window. 
+
+CLASS DESCRIPTION: 
+I created a class named Day. The day class included a struct named Task, which included the necessary 
+details (task name, start time, end time and color) in order to generate an image of that task. The day 
+class also included a vector of these tasks, a day name Text object, a rectangle shape object named 
+dayShape, and an integer dayValue. The day class included some public methods such as: a day constructor 
+and overloaded constructor, a destructor, a void function to create a task, a Text object function to get 
+the name of the day, a void draw function to draw the days, a void draw all tasks function to draw each 
+task on top of the day window, and a void function to detect whether or not the mouse was over the day object. 
+
+LIST DATA STRUCTURE:
+I used a vector to store all of the daily tasks within the day object. I chose a vector instead of other 
+storage methods, because they are flexible. Vectors automatically adjust their size when a new element is 
+added, which is important to my project because I am unable to know how many tasks each user will add to each day.
+
+REFLECTIONS:
+I learned a lot about using text within SFML. I also learned about mapping object dimensions, because I 
+had to map to the dimensions of the Day rectangle shape object so that I could detect when it was pressed. 
+I learned that I really enjoy creating website-like interfaces, so I think that I will try other full stack 
+development projects in the future. If I were to try to create this project again, I think that I would create 
+more helper functions, because there are a lot of redundant draw loops in the main. 
